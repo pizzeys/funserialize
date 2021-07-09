@@ -1,0 +1,121 @@
+<?php
+
+// The following functions are handled by Psalm already and so were excluded:
+// file_get_contents(), file_put_contents(), unlink(), mkdir(), rmdir(),
+// readfile(), fopen(), parse_ini_file(), file(), copy(), rename()
+
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function is_readable($filename) { } 
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function file_exists($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function filesize($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function is_executable($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function is_writable($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function is_file($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function is_link($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function is_dir($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function fileatime($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function filectime($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function filemtime($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function touch($filename, $time, $atime) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function stat($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function lstat($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function fileperms($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function filetype($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function fileinode($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function fileowner($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function filegroup($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function getimagesize($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function exif_read_data($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function exif_read_data($filename) { }
+
+/**
+ * @psalm-taint-sink file $filename
+ */
+function md5_file($filename) { }
